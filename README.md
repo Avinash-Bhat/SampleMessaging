@@ -1,4 +1,4 @@
-# Sample Messaging
+# Sample Messaging [![Build Status](https://travis-ci.org/Avinash-Bhat/SampleMessaging.svg?branch=master)](https://travis-ci.org/Avinash-Bhat/SampleMessaging)
 
 ## How to setup Firebase Project
 
