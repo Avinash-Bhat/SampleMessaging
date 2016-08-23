@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sample Messaging</string>
+    <string name="main_screen_token_copied">Token copied</string>
 </resources>

@@ -2,4 +2,5 @@
 <resources>
     <string name="main_screen_awaiting_messages">Awaiting messages</string>
     <string name="main_screen_send_the_messages_from_firebase_console">(psst send the messages from firebase console)</string>
+    <string name="main_screen_open_firebase_console">Open Firebase Console</string>
 </resources>

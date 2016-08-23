@@ -2,6 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
+    
+    <data>
+
+        <variable
+            name="firebaseModel"
+            type="com.sample.samplemessaging.FirebaseModel" />
+    </data>
 
     <RelativeLayout
         android:id="@+id/activity_main"
@@ -30,5 +37,13 @@
             android:layout_centerHorizontal="true"
             android:text="@string/main_screen_send_the_messages_from_firebase_console"
             android:textStyle="italic" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="@{() -> firebaseModel.openConsoleWithTrackingId()}"
+            android:text="@string/main_screen_open_firebase_console"/>
     </RelativeLayout>
 </layout>
