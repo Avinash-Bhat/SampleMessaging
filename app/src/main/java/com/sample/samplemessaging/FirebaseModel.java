@@ -7,11 +7,14 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.widget.Toast;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class FirebaseModel {
+
+    private static final String TAG = "FirebaseModel";
 
     private final ClipboardManager clipboard;
 
@@ -28,6 +31,7 @@ public class FirebaseModel {
         clipboard.setPrimaryClip(clip);
         Toast.makeText(context, context.getString(R.string.main_screen_token_copied), LENGTH_SHORT)
                 .show();
+        Log.d(TAG, "token: " + token);
         Intent intent = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://console.firebase.google.com/"));
         context.startActivity(intent);
